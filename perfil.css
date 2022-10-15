@@ -1,0 +1,219 @@
+
+body{
+    background-color:rgba(255, 255, 255, 0.623);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/****************************************
+*************** HEADER ******************
+****************************************/
+
+/*-Header_panel-*/
+.header{
+    background-color:rgba(255, 255, 255, 0.562);
+    background-image: url('https://i.gifer.com/xK.gif');
+    background-repeat: round;
+    background-blend-mode:overlay;
+    image-rendering: optimizeQuality;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom:0px;
+    border-radius:15px;
+}
+
+
+/*-Header_panel-nombre-*/
+h1.nombre{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 500%;
+    font-weight: 700;
+    letter-spacing: 20px;
+    color:rgba(0, 36, 90, 0.856);
+}
+
+
+/*- Botones de <nav>-*/
+#btn{
+    padding-left:20px;
+    padding-right:20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-left:10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    text-decoration-line: none;
+    border:2px solid rgb(0, 36, 90);
+    text-shadow:1px 1px 0 rgb(0, 36, 90);
+}
+
+/*-Hover de botones-*/
+#btn:hover{
+    background-color:rgba(0, 0, 0, 0.233);
+}
+
+
+/*- Texto de botones -*/
+#btit{
+    font-size:10px;
+    color:rgb(255, 255, 255);
+    font-weight:bold;
+    font-family:'Roboto Mono', monospace;
+    text-decoration-line: none;
+    border-radius: 5px;
+}
+
+
+/****************************************
+********** BLOQUE DE CONTENIDO **********
+****************************************/
+
+.contenido{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color:rgba(255, 255, 255, 0.171);
+    /*background-image: url('https://i.gifer.com/2yqT.gif'); */
+    background-blend-mode:lighten;
+    margin-top:0;
+    border-radius:5px;
+    box-shadow: 0px 0px 5px rgba(7, 3, 31, 0.377);
+}
+
+.contenidos{
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.h{
+    font-family:'Roboto Mono', monospace;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li{
+    color:rgb(10, 0, 53);
+    font-family: 'Roboto Mono', monospace;
+    list-style:square;
+}
+
+.tarjeta{
+    background-color:rgba(255, 255, 255, 0.562);
+    background-image: url('https://i.gifer.com/xK.gif');
+    background-blend-mode:lighten;
+    text-align: center;
+}
+
+.section1{
+    margin-top: -25px;
+}
+
+#tit{
+    color: rgb(58, 32, 56);
+    text-shadow: 1px 1px 5px rgb(255, 255, 255);
+}
+
+
+
+
+
+
+/****************************************
+******* MEDIA QUERIES (SCREENS)**********
+****************************************/
+
+@media screen and (max-width:700px) {
+    p{
+        font-size: 80%;
+    }
+
+    #btn{
+        
+        padding-left:5px;
+        padding-right:5px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-left:0px;
+        margin-right: 0px;
+        border-radius: 10px;
+        text-decoration-line: none;
+    }
+    
+    #btn:hover{
+        background-color:rgba(0, 0, 0, 0.705);
+    }
+
+    #btit{
+        font-size:5px;
+        color:rgb(255, 255, 255);
+        font-weight:bold;
+        font-family:'Roboto Mono', monospace;
+        text-decoration-line: none;
+    }
+
+    #nombre{
+        font-size: 200%;
+        font-weight: 700;
+        letter-spacing: 10px;
+    }
+
+    .contenidos{
+        font-family:'Roboto Mono', monospace;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 60%;
+    }
+
+    .p{
+        font-family:'Roboto Mono', monospace;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 50%;
+    }
+
+    .h{
+        font-family:'Roboto Mono', monospace;
+        font-size: 90%;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width:340px) {
+    #btn{
+        
+        padding-left:5px;
+        padding-right:5px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-left:0px;
+        margin-right: 0px;
+        border-radius: 10px;
+        text-decoration-line: none;
+    }
+    
+    #btn:hover{
+        background-color:rgba(0, 0, 0, 0.712);
+    }
+
+    #btit{
+        font-size:3px;
+        color:rgb(255, 255, 255);
+        font-weight:bold;
+        font-family:'Roboto Mono', monospace;
+        text-decoration-line:none;
+    }
+
+    #nombre{
+        font-size: 100%;
+        font-weight: 700;
+        letter-spacing: 10px;
+    }
+}
