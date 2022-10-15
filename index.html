@@ -8,28 +8,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <!-------------- STYLESHEET'S --------------->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;0,700;1,400&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2018.css">
   <link rel="stylesheet" href="https://github.com/Jesparzarom/jesparzarom.github.io/blob/main/perfil.css">
+  <link rel="stylesheet" href="perfil.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="../styles/icons.css">
-  <!-------------- SCRIPT'S --------------->
-  <script type="text/javascript" src="scripts\scripts.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/brython@3/brython.min.js">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/brython@3/brython_stdlib.js">
-  </script>
-
   <!----------- PRECONECT'S --------------->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 </head>
 
 <body id="bdy">
+
   <!----- SECCION DE HEADER  ----->
   <header class="w3-container header w3-center">
     <!-- Nombre en Header  -->
@@ -46,20 +36,17 @@
         <button href="#" id="btn" class="w3-btn tablink nav_boton w3-wide" onclick="contenido(event, 'Resumen')">
           <h3 id="btit">Resumen</h3>
         </button>
-
         <!-- PESTAÑA PERFIL, CONTENIDO A DESARROLLAR
         <button href="#" id="btn" class="w3-btn tablink nav_boton w3-wide" onclick="contenido(event, 'Perfil')">
           <h3 id="btit">Perfil</h3>
         </button>
         -->
-
         <button href="#" id="btn" class="w3-btn tablink nav_boton w3-wide" onclick="contenido(event, 'GitHub')">
           <h3 id="btit">GitHub</h3>
         </button>
 
       </div>
     </nav>
-
   </header>
 
   <br>
@@ -97,8 +84,6 @@
       </p>
     </div>
 
-
-
     <!-- Contenido pestaña perfil  
     <div id="Perfil" class="w3-panel w3-container panel_de_contenido contenido contenidos w3-center" style="display:none">
       <h2 class="w3-center h">Perfil</h2>
@@ -117,9 +102,7 @@
       </p>
       <p></p>
     </div>
-
   </section>
-
 
   <script>
     function contenido(evt, titulo_btn) {
