@@ -8,19 +8,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <!-------------- STYLESHEET'S --------------->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;0,700;1,400&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="https://jesparzarom.github.io/CSS/index.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2018.css">
+  <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="../styles/icons.css">
+  <!-------------- SCRIPT'S --------------->
+  <script type="text/javascript" src="scripts\scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/brython@3/brython.min.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/brython@3/brython_stdlib.js">
+  </script>
+
   <!----------- PRECONECT'S --------------->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 </head>
 
-<body id="bdy">
-
+<body id="bdy" class="w3-card-4">
   <!----- SECCION DE HEADER  ----->
-  <header class="w3-container header w3-center">
+  <header class="w3-container header w3-center w3-card-4">
     <!-- Nombre en Header  -->
     <div>
       <h1 class="nombre w3-animate-zoom" id="nombre">
@@ -35,17 +46,20 @@
         <button href="#" id="btn" class="w3-btn tablink nav_boton w3-wide" onclick="contenido(event, 'Resumen')">
           <h3 id="btit">Resumen</h3>
         </button>
+
         <!-- PESTAÑA PERFIL, CONTENIDO A DESARROLLAR
         <button href="#" id="btn" class="w3-btn tablink nav_boton w3-wide" onclick="contenido(event, 'Perfil')">
           <h3 id="btit">Perfil</h3>
         </button>
         -->
+
         <button href="#" id="btn" class="w3-btn tablink nav_boton w3-wide" onclick="contenido(event, 'GitHub')">
           <h3 id="btit">GitHub</h3>
         </button>
 
       </div>
     </nav>
+
   </header>
 
   <br>
@@ -55,23 +69,23 @@
     <!-- Contenido pestaña Resumen -->
     <div id="Resumen" class="w3-panel panel_de_contenido contenido" style="display:none">
 
-      <div class="contenidos">
-        <h2 class="w3-center h">¡Hola!...</h2>
-        <p class="">
-          <b>Me llamo Juan y soy técnico universitario en logística. Soy bastante curioso,
-            creativo, analítico, resiliente y colaborativo.Me encanta aprender cosas nuevas
-            que sean útiles y funcionales para mi crecimiento personal y profesional.
-            <br><br>
-            Me gusta pensar, investigar, analizar y probar soluciones para las diversas problemáticas
-            que se me van presentando. Soy fan de lo tradicional y de los estándares, sin embargo...
-            ¡me fascina lo disruptivo!.</b>
+      <div class="contenidos w3-animate-opacity">
+        <h2 class="w3-center"></h2>
+        <p class="w3-animate-opacity w3-padding-16" id="texto">
+          ¡Hola!... me llamo Juan y soy técnico universitario en logística. Soy bastante curioso,
+          creativo, analítico, resiliente y colaborativo.Me encanta aprender cosas nuevas
+          que sean útiles y funcionales para mi crecimiento personal y profesional.
+          <br><br>
+          Me gusta pensar, investigar, analizar y probar soluciones para las diversas problemáticas
+          que se me van presentando. Soy fan de lo tradicional y de los estándares, sin embargo...
+          ¡me fascina lo disruptivo!.
         </p>
       </div>
-      <br>
-      <div class="w3-card contenido tarjeta contenidos">
+
+      <div class="w3-card tarjeta contenidos w3-animate-left ">
         <p id="tit"><b>¿QUÉ HACE UN LOGÍSTA EN PROGRAMACIÓN?</b></p>
       </div>
-      <p class='p'>Hasta hace poco más de tres meses no sabía nada de programación, siempre pensé que
+      <p class='w3-animate-opacity w3-padding-16' id="texto">Hasta hace poco más de tres meses no sabía nada de programación, siempre pensé que
         era para "genios nerds del teclado". Empecé a sumergirme en el mundo de la programación de la mano de
         <b><span style="color:rgb(0, 52, 165)">Py</span><span style="color:rgb(212, 173, 0)">thon</span></b>
         con el interés particular de aprender y conocer qué apliciones podría tener en la disciplina logística, como por
@@ -82,6 +96,8 @@
         que surgen al ir avanzando en este universo.
       </p>
     </div>
+
+
 
     <!-- Contenido pestaña perfil  
     <div id="Perfil" class="w3-panel w3-container panel_de_contenido contenido contenidos w3-center" style="display:none">
@@ -94,13 +110,14 @@
     -->
 
     <!-- Contenido pestaña GitHub  -->
-    <div id="GitHub" class="w3-panel w3-container panel_de_contenido contenido contenidos" style="display:none">
-      <h2 class="w3-center h">Repositorios GitHub</h2>
+    <div id="GitHub" class="w3-panel w3-container panel_de_contenido contenido contenidos " style="display:none">
+      <h2 class="w3-center h ">Repositorios GitHub</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias similique, est quod odit ea enim cumque
         impedit ad magni ex laudantium reprehenderit atque ducimus possimus sapiente aliquam quibusdam, eaque provident.
       </p>
       <p></p>
     </div>
+
   </section>
 
   <script>
@@ -112,10 +129,10 @@
       }
       tablinks = document.getElementsByClassName("tablink");
       for (i = 0; i < x.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" w3-2018-nebulas-blue", "");
+        tablinks[i].className = tablinks[i].className.replace(" w3-purple w3-opacity", "");
       }
       document.getElementById(titulo_btn).style.display = "block";
-      evt.currentTarget.className += " w3-2018-nebulas-blue";
+      evt.currentTarget.className += " w3-purple w3-opacity";
     }
   </script>
 
