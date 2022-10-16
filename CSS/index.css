@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
     background-image: url('https://i.gifer.com/xK.gif');
     background-blend-mode:lighten;
     text-align: center;
-    font-size: medium;
+    font-size: small;
 }
 
 .section1{
@@ -166,7 +166,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
 
 @media screen and (max-width:300px) {
     #btn{
-        
         padding-left:10px;
         padding-right:10px;
         padding-top: 0px;
@@ -176,7 +175,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
         border-style:none;
         letter-spacing: -1px;
         background-color:rgba(0, 0, 0, 0.247)
-
     }
     
     #btn:hover{
@@ -185,22 +183,24 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
 
     #btn:any-link{
         text-decoration: none;
-
     }
 
-
-    
     #btit{
         font-size:15px;
         color:rgb(243, 243, 243);
         font-weight:bold;
-        font-family:'Roboto Mono', monospace;
-        
+        font-family:'Roboto Mono', monospace;  
     }
 
     #nombre{
         font-size: 220%;
         font-weight: 900;
         letter-spacing: -1px;
+    }
+    
+    #texto{
+    font-size:medium;
+    text-align: justify;
+    font-family:'Courier New', Courier, monospace;
     }
 }
