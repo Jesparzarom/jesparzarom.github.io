@@ -1,3 +1,6 @@
+
+
+
 body{
     background-color:rgba(255, 255, 255, 0.623);
     margin-left: 10px;
@@ -108,13 +111,21 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
 }
 
 #texto{
-    font-size:medium;
+    font-size:large;
     text-align: justify;
     font-family:'Courier New', Courier, monospace;
 }
 
+#logo{
+    width: 90px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:white;
+}
 
-
+#logo:hover{
+    width: 85px;
+}
 
 /****************************************
 ******* MEDIA QUERIES (SCREENS)**********
@@ -160,9 +171,16 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
         text-align: justify;
         font-family:'Courier New', Courier, monospace;
     }
-    
-    .tarjeta{
-    font-size:small;
+
+    #logo{
+        width: 40px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color:white;
+    }
+
+    #logo:hover{
+        width: 35px;
     }
 }
 
@@ -170,6 +188,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
 
 @media screen and (max-width:300px) {
     #btn{
+        
         padding-left:10px;
         padding-right:10px;
         padding-top: 0px;
@@ -179,6 +198,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
         border-style:none;
         letter-spacing: -1px;
         background-color:rgba(0, 0, 0, 0.247)
+
     }
     
     #btn:hover{
@@ -187,13 +207,17 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
 
     #btn:any-link{
         text-decoration: none;
+
     }
 
+
+    
     #btit{
         font-size:15px;
         color:rgb(243, 243, 243);
         font-weight:bold;
-        font-family:'Roboto Mono', monospace;  
+        font-family:'Roboto Mono', monospace;
+        
     }
 
     #nombre{
@@ -201,14 +225,15 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
         font-weight: 900;
         letter-spacing: -1px;
     }
-    
-    .tarjeta{
-    font-size:small;
+
+    #logo{
+        width: 30px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color:white;
     }
-    
-    #texto{
-    font-size:medium;
-    text-align: justify;
-    font-family:'Courier New', Courier, monospace;
+
+    #logo:hover{
+        width: 25px;
     }
 }
