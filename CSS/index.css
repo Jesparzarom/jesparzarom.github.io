@@ -160,6 +160,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
         text-align: justify;
         font-family:'Courier New', Courier, monospace;
     }
+    
+    .tarjeta{
+    font-size:small;
+    }
 }
 
 
@@ -196,6 +200,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
         font-size: 220%;
         font-weight: 900;
         letter-spacing: -1px;
+    }
+    
+    .tarjeta{
+    font-size:small;
     }
     
     #texto{
