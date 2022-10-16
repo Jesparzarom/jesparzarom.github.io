@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
     background-image: url('https://i.gifer.com/xK.gif');
     background-blend-mode:lighten;
     text-align: center;
-    font-size: large;
+    font-size: medium;
 }
 
 .section1{
@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
 }
 
 #texto{
-    font-size:large;
+    font-size:medium;
     text-align: justify;
     font-family:'Courier New', Courier, monospace;
 }
