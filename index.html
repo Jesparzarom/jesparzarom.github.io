@@ -1,123 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <!-------------- META --------------->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-------------- STYLESHEET'S --------------->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;0,700;1,400&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="/CSS/main/index.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <!----------- PRECONECT'S --------------->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-------------- META --------------->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
+
+    <title>JUPLER</title>
+
+    <!-------------- STYLESHEET'S --------------->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./css/estilos.css"/>
 </head>
 
-<body id="bdy">
+<body>
 
-  <!----- SECCION DE HEADER  ----->
-  <header class="w3-container header w3-center">
-    <!-- Nombre en Header  -->
-    <div>
-      <h1 class="nombre w3-animate-zoom" id="nombre">
-        J_Esparza
-      </h1>
-    </div>
 
-    <!-- Menú pestañas  -->
-    <nav class="w3-center">
-      <div class="barra_nav w3-bar w3-animate-zoom" id="navPanel">
+    <span class="up fa-brands fa-space-awesome"><p>fly...</p></span>
 
-        <button href="#" id="btn" class="w3-btn tablink nav_boton w3-wide" onclick="contenido(event, 'Resumen')">
-          <h3 id="btit">Resumen</h3>
-        </button>
-        <!-- PESTAÑA PERFIL, CONTENIDO A DESARROLLAR
-        <button href="#" id="btn" class="w3-btn tablink nav_boton w3-wide" onclick="contenido(event, 'Perfil')">
-          <h3 id="btit">Perfil</h3>
-        </button>
-        -->
-        <button href="#" id="btn" class="w3-btn tablink nav_boton w3-wide" onclick="contenido(event, 'GitHub')">
-          <h3 id="btit">GitHub</h3>
-        </button>
-
-      </div>
+    <nav class="header__navbar">
+        <a href="#">Perfil</a>
+        <a href="#">formacion</a>
+        <a href="#">experiencia</a>
+        <a href="#">skills</a>
+        <a href="#">Contact</a>
     </nav>
-  </header>
+    <header class="header">
 
-  <br>
+        <hgroup class="header__title">
+            <h1 class="header__title--name ">J. ESPARZA</h1>
+            <h4 class="header__title--position">TÉCNICO EN PLANIFICACIÓN LOGÍSTICA</h4>
+        </hgroup>
 
-  <!----- SECCION DE CONTENIDO  ----->
-  <section class="w3-container section1">
-    <!-- Contenido pestaña Resumen -->
-    <div id="Resumen" class="w3-panel panel_de_contenido contenido" style="display:none">
+        <section class="header__section">
+            <div class="header__section--quote w3-animate-fading ">
+                <p><strong>"Hazlo simple, pero significativo" <br>-Drapper (Mad Men)-</strong></p>
+            </div>
+        </section>
 
-      <div class="contenidos">
-        <h2 class="w3-center h">¡Hola!...</h2>
-        <p class="">
-          <b>Me llamo Juan y soy técnico universitario en logística. Soy bastante curioso,
-            creativo, analítico, resiliente y colaborativo.Me encanta aprender cosas nuevas
-            que sean útiles y funcionales para mi crecimiento personal y profesional.
-            <br><br>
-            Me gusta pensar, investigar, analizar y probar soluciones para las diversas problemáticas
-            que se me van presentando. Soy fan de lo tradicional y de los estándares, sin embargo...
-            ¡me fascina lo disruptivo!.</b>
-        </p>
-      </div>
-      <br>
-      <div class="w3-card contenido tarjeta contenidos">
-        <p id="tit"><b>¿QUÉ HACE UN LOGÍSTA EN PROGRAMACIÓN?</b></p>
-      </div>
-      <p class='p'>Hasta hace poco más de tres meses no sabía nada de programación, siempre pensé que
-        era para "genios nerds del teclado". Empecé a sumergirme en el mundo de la programación de la mano de
-        <b><span style="color:rgb(0, 52, 165)">Py</span><span style="color:rgb(212, 173, 0)">thon</span></b>
-        con el interés particular de aprender y conocer qué apliciones podría tener en la disciplina logística, como por
-        ejemplo el análisis de datos para pronósticar la demanda y planificar en consecuencia.
-        <br><br>
-        En este momento sigo aprendiendo a mi ritmo ya que lo hago autodidácta y estoy fascinado con todas las
-        posibilidades
-        que surgen al ir avanzando en este universo.
-      </p>
-    </div>
+    </header>
+    
+    <h3 class="formacion">PERFIL</h3>
+    <hr>
+    <section class="resumen" id="sobre-mi">
+        <h3> <img src="avatar.svg" alt="" class="sobre-mi">SOBRE MÍ</h3>
+        <div class="resumen__contenedor">
+            <article class="resumen__contenedor--articulos">
+                <div class="resumen__contenedor--articulos__articulo">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem qui deserunt vitae
+                        debitis
+                        tempore consequatur est distinctio, reiciendis, voluptatibus minima facere corrupti tempora eos
+                        vel
+                        voluptate ratione dolorum! Odit, nostrum!Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit.
+                        Exercitationem qui deserunt vitae debitis
+                    </p>
+                </div>     
+            </article>
+        </div>
+    </section>   
 
-    <!-- Contenido pestaña perfil  
-    <div id="Perfil" class="w3-panel w3-container panel_de_contenido contenido contenidos w3-center" style="display:none">
-      <h2 class="w3-center h">Perfil</h2>
-      <p>Perfil is the capital of France.</p>
-      <p>The Perfil area is one of the largest population centers in Europe, with more than 12 million
-        inhabitants.
-      </p>
-    </div>
-    -->
+    <h3 class="formacion">FORMACIÓN</h3>
+    <hr>
+    <section class="educacion">
+        <div class="educacion__contenedor">
+            <h2>UNIVERISDAD NACIONAL DE LANÚS</h2>
+            <article class="educacion__contenedor--items">
+                <div class="educacion__contenedor--items--item">
+                    <p>Técnicatura Universitaria en Logística</p>
+                    <p>(Obtenida)</p>
+                </div>
+                <div class="educacion__contenedor--items--item">
+                    <p>Licenciatura en Planificación Logística</p>
+                    <p>(Falta presentar TFI)</p>
+                </div>
+            </article>
+        </div>
 
-    <!-- Contenido pestaña GitHub  -->
-    <div id="GitHub" class="w3-panel w3-container panel_de_contenido contenido contenidos" style="display:none">
-      <h2 class="w3-center h">Repositorios GitHub</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias similique, est quod odit ea enim cumque
-        impedit ad magni ex laudantium reprehenderit atque ducimus possimus sapiente aliquam quibusdam, eaque provident.
-      </p>
-      <p></p>
-    </div>
-  </section>
+    </section>
 
-  <script>
-    function contenido(evt, titulo_btn) {
-      var i, x, tablinks;
-      x = document.getElementsByClassName("panel_de_contenido");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablink");
-      for (i = 0; i < x.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" w3-2018-nebulas-blue", "");
-      }
-      document.getElementById(titulo_btn).style.display = "block";
-      evt.currentTarget.className += " w3-2018-nebulas-blue";
-    }
-  </script>
+    <h3 class="formacion">EXPERIENCIA</h3>
+    <section >
+    </section>
+
+    <h3 class="formacion">SKILLS</h3>
+    <section class="skills fondo2">
+
+        <h3>PROGRAMACIÓN</h3>
+        <article class="skills__programacion">
+
+            <div class="skills__programacion--card">
+                <h3><img src="./icons/langs/python_icon.svg" alt="" class="ico"></h3>
+                <h4 class="py">PYTHON</h4>
+                <div class="card--barra">
+                    <div class="barra--exp python">70%</div>
+                </div>
+            </div>
+
+            <div class="skills__programacion--card">
+                <h3><img src="./icons/langs/html_icon.svg" alt="" class="ico"></h3>
+                <h4 class="ht">HTML</h4>
+                <div class="card--barra">
+                    <div class="barra--exp  html">80%</div>
+                </div>
+            </div>
+
+            <div class="skills__programacion--card">
+                <h3><img src="./icons/langs/css3_icon.svg" alt="" class="ico"></h3>
+                <h4 class="cs">CSS</h4>
+                <div class="card--barra">
+                    <div class="barra--exp  css">60%</div>
+                </div>
+            </div>
+
+            <div class="skills__programacion--card">
+                <h3><img src="./icons/langs/database_icon.svg" alt="" class="ico"></h3>
+                <h4 class="sq">SQLite</h4>
+                <div class="card--barra">
+                    <div class="barra--exp  sqlite">35%</div>
+                </div>
+            </div>
+
+        </article>
+
+        <h3>OFIMÁTICA</h3>
+        <article class="skills__programacion">
+
+            <div class="skills__programacion--card">
+                <h3><img src="./icons/ofi/excel_icon.svg" alt="" class="ico"></h3>
+                <h4>EXCEL</h4>
+                <div class="card--barra">
+                    <div class="barra--exp python">80%</div>
+                </div>
+            </div>
+
+            <div class="skills__programacion--card">
+                <h3><img src="./icons/ofi/word_icon.svg" alt="" class="ico"></h3>
+                <h4>WORD</h4>
+                <div class="card--barra">
+                    <div class="barra--exp  html">60%</div>
+                </div>
+            </div>
+
+            <div class="skills__programacion--card">
+                <h3><img src="./icons/ofi/powerpoint_icon.svg" alt="" class="ico"></h3>
+                <h4>PPOINT</h4>
+                <div class="card--barra">
+                    <div class="barra--exp  css">55%</div>
+                </div>
+            </div>
+
+        </article>
+
+    </section>
+
+
+    <footer>
+        <h6 class="w3-amber">by @JESPARZAROM</h6>
+    </footer>
 
 </body>
 
