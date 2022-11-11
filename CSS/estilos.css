@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
     .skills__programacion{
-        background: url(dev.svg);
+        background: url(../icons/bkg/dev.svg);
         background-blend-mode: lighten;
         background-position: contain;
         background-size: cover;
