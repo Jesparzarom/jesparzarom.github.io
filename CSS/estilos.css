@@ -1,4 +1,5 @@
 html {
+    background-color: #fdfefb;
     margin: 0px 1px;
     padding: 2px 20px;
     text-decoration: none;
@@ -13,13 +14,10 @@ html {
 }
 
 body {
-    background: url(https://images.pexels.com/photos/6331082/pexels-photo-6331082.jpeg);
-    background-position: contain;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #fdfefb;
     display: flex;
     flex-flow: column;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.315);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,94 +25,100 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fondo1 {
-    background: url(https://cdn.pixabay.com/photo/2021/09/15/13/28/art-6626881_960_720.png);
+    background: url(../reshot-illustration-abstract-background-QPX5D9EVHZ.png);
     background-blend-mode: lighten;
     background-position: contain;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     border-radius: 5px;
     height: auto;
 }
 
 .fondo2 {
-    background-color: rgba(71, 234, 255, 0.445);
-    background-image: url(../icons/bkg/dev.svg);
+    background: url(../reshot-illustration-modern-abstract-background-KFUMPYS4ZT.png);
     background-position: contain;
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
+    background-attachment:fixed;
     border-radius: 5px;
     height: auto;
 }
 
+.fondo3 {
+    border-radius: 5px;
+    height: auto;
+}
+
+img.icons {
+    width: 100px;
+    height: 100px;
+}
 
 
 /****************HEADER*****************
 ****************************************/
 .header {
+    background: #fdfefb;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
     height: 100vh;
 }
 
-
 /*Barra de navegación*/
 .header__navbar {
     display: flex;
     flex-flow: row nowrap;
     flex: 0 1 auto;
-    background: rgba(255, 0, 0, 0);
     color: rgb(196, 196, 196);
     text-transform: uppercase;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-content: center;
     align-items: center;
     height: 10%;
+    background:#01324d;
 }
     .header__navbar a {
-        background-color: rgba(168, 61, 61, 0.808);
+        background-color: #2245b700;
+        color: #ef4055;
         padding: 5px 5px;
-        margin: 0 10px;
-        font-size: 11px;
-        letter-spacing: 2px;
+        margin: 0 20px;
+        font-size: 12px;
+        letter-spacing: 3px;
         border-radius: 10px;
         text-align: center;
         box-sizing: border-box;
     }
     .header__navbar a:hover {
-        color: rgb(0, 211, 130);
+        color: #00eaff;
+        transform: scale(105%);
     }
+
+    
 
 
 /*Título principal*/
 .header__title {
     /* From https://css.glass */
-    background-blend-mode: overlay;
-    background: rgba(168, 168, 168, 0.404);
-    opacity: 80%;
-    border-radius: 5px;
-    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.418);
-    backdrop-filter: blur(80px);
-    -webkit-backdrop-filter: blur(80px);
-    -moz-backdrop-filter: blur(80px);
-    -o-backdrop-filter: blur(80px);
-    border: 1px solid rgba(255, 255, 255, 0.315);
-    margin: 0px -10px;
+    background: rgb(255, 255, 255);
 }
 
     .header__title--name {
         text-align: center;
         flex: 0 1 auto;
         font-size: 9vw;
-        color: rgb(0, 141, 141);
+        color: #094067;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
         text-shadow:
-            -1px -1px 0 rgba(255, 255, 255, 0.45),
-            1px -1px 0 rgba(255, 255, 255, 0.45),
-            -1px 1px 0 rgba(255, 255, 255, 0.45),
-            1px 1px 0 rgba(255, 255, 255, 0.45);
+            -2px -2px 0 rgba(255, 255, 255, 0.664),
+            2px -2px 0 rgba(255, 255, 255, 0.664),
+            -2px 2px 0 rgba(255, 255, 255, 0.664),
+            2px 2px 0 rgba(255, 255, 255, 0.664);
     }
 
     .header__title--position {
@@ -122,13 +126,13 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: -50px;
         letter-spacing: 10px;
         font-size: 20px;
-        color: rgb(255, 255, 255);
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #353738;
     }
 
 
 /*frase*/
 .header__section {
+    background:#fdfefb;
     display: flex;
     flex-flow: column wrap;
     flex: 1 1 auto;
@@ -137,11 +141,10 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
 
-    color: white;
-    background: rgba(255, 255, 255, 0);
-    border-radius: 15px;
-    letter-spacing: 5px;
-    font-size: xx-large;
+    color: rgb(255, 255, 255);
+    font-style:oblique;
+    font-size: 4rem;
+    margin:-0px -3.5px 0px -5px;
 }
 
 
@@ -151,7 +154,7 @@ h1, h2, h3, h4, h5, h6 {
 ********************************************/
 .resumen {
     margin-bottom: 10px;
-    background-color:antiquewhite;
+    background-color:#01324d;
 }
 
     .resumen__contenedor {
@@ -165,72 +168,68 @@ h1, h2, h3, h4, h5, h6 {
     }
 
         .resumen__contenedor--articulos {
-        background-color: rgba(255, 255, 255, 0.596);
         margin: 5px;
         width: 100%;
         }
 
             .resumen__contenedor--articulos__articulo {
-            background-color: rgba(255, 255, 255, 0);
             box-sizing: border-box;
+            color: #fdfefb;
+            }
+
+            .resumen>h3 {
+                color:#ef4055;
             }
 
 
 
 /**************** EDUCACIÓN *****************
 ********************************************/
-            .formacion{
-                font-size: 3rem;
+            .h3_title{
+                font-size: 2rem;
+                color: #009ecf;
             }
 
+
+
             .educacion {
-                background-color:rgba(255, 255, 255, 0.486);
                 height:auto;
                 border-radius: 5px;
-                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
             }
             .educacion__contenedor {
-                background: url(../icons/bkg/academic.svg);
-                background-repeat: no-repeat;
                 border-radius: 5px;
-                height: 50vh;
+                height: auto;
             }
 
             .educacion__contenedor--items{
-                background-color: #0a6b5600;
                 display: flex;
-                flex-flow:column wrap;
-                align-content:flex-end;
+                flex-flow:row wrap;
+                justify-content:center;
                 height: auto;
             }
 
             .educacion__contenedor--items--item{
-                background-color: #eeeeee;
-                color:#3c92c4;
-                width: 50%;
+                background-color: #009fcf;
+                color:#01324d;
+                width: 30vw;
+                height: 30vh;
                 border-radius: 15px;
                 text-align:center;
                 box-sizing: border-box;
+                margin: 10px;
+                padding: 20px;;
             }
             
 
 /**************** EXPERIENCIAS ***************
 ********************************************/
 
-.main2 {
-    border-radius: 5px;
-    margin-bottom: 10px;
-    display: flex;
-    flex-flow: column nowrap;
-    height: auto;
-}
-
-
 
 
 /**************** SKILLS ********************
 ********************************************/
 .skills {
+    background: #009fcf;
     background-blend-mode: lighten;
     background-position: contain;
     background-size: cover;
@@ -241,11 +240,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
     .skills__programacion{
-        background: url(dev.svg);
-        background-blend-mode: lighten;
-        background-position: contain;
-        background-size: cover;
-        background-repeat: no-repeat;
+        background: rgba(15, 14, 14, 0);
         border-radius: 5px;
         margin-bottom: 10px;
 
@@ -259,31 +254,31 @@ h1, h2, h3, h4, h5, h6 {
 
         .skills__programacion--card {
             margin: 1%;
-            background-color: rgba(247, 171, 121, 0.973);
+            background-color: #34d1d6a2;
             border-radius: 5px;
             width: 15%;
             height: 35%;
             box-sizing: border-box;
             color: #fff;
-            box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.534);
-            transition: margin 1s;
+            transition: all 0.5s;
         }
 
-        .skills__programacion--card:hover {
-            box-shadow: 2px 2px 10px rgb(5, 6, 8);
-            margin-top: -1px;
+        .skills__programacion--card:hover  {
+            box-shadow: 2px 2px 10px rgb(88, 88, 88);
+            transform: scale(110%);
+            border-radius: 15%;
         }
 
             .ico {
-                width: 85px;
-                height: 85px;
-                background-color:rgba(255, 255, 255, 0.616);
+                width: 80px;
+                height: 80px;
+                background-color: rgb(255, 255, 255);
                 border-radius: 40%;
                 box-shadow: 0px 1px 5px 1px rgba(5, 71, 88, 0.76);
             }
 
             .card--barra {
-            background-color: rgb(24, 0, 80);
+            background-color: #ef4055;
             width: 90%;
             box-sizing: border-box;
             height: auto;
@@ -297,54 +292,34 @@ h1, h2, h3, h4, h5, h6 {
                 text-align: right;
                 padding-top: 5px;
                 padding-bottom: 0px;
-                color: rgb(24, 0, 80);
+                color: #01324d;
                 border-radius: 10px;
             }
                     .python {
                         width: 75%;
                         background-color: #3c92c4;
                     }
-                        .py {
-                            font-weight: bold;
+                        .names {
                             font-size:1rem;
-                            color: #3c92c4;
-                            text-shadow: 0px 0px 5px rgb(172, 172, 172);
+                            letter-spacing: 2PX;
                         }
 
                     .html {
                         width: 80%;
                         background-color: #f39f21;
                     }
-                        .ht {
-                            font-weight: bold;
-                            font-size:1rem;
-                            color:#c97800;
-                            text-shadow: 0px 0px 5px rgb(172, 172, 172);
-                        }
 
                     .css {
                         
                             width: 60%;
                             background-color: #36f4cb;
                     }
-                        .cs {
-                            font-weight: bold;
-                                font-size:1rem;
-                                color:#0a6b56;
-                                text-shadow: 0px 0px 5px rgb(172, 172, 172);
-                        }
 
                     .sqlite{
                         width: 35%;
                         background-color: #36f47f;
 
                     }
-                        .sq {
-                            font-weight: bold;
-                                font-size:1rem;
-                                color:#39693f;
-                                text-shadow: 0px 0px 5px rgb(172, 172, 172);
-                            }
 
 
 
@@ -397,33 +372,63 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     color: rgb(252, 255, 71);
 }
+
 /*-------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /***************************************
 ***************MEDIA QUERY *************
 ****************************************/
-@media (max-width: 480px) {
+@media (max-width: 722px) {
 
 /****************HEADER*****************
 ****************************************/
     .header {
         display: flex;
         width: 100%;
-        height: 100vh;
+        height: 55vh;
     }
 
     .header__navbar {
         flex-flow: wrap;
+        padding: 0%;
     }
 
     .header__navbar a {
         padding: 5px;
-        margin: 0 15px;
+        margin: 5px 5px;
         font-size: 8px;
-        letter-spacing: 0px;
-        word-spacing: 0px;
+        box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.548);
+        border-radius: 0px;
+        transition: all 1s;
     }
+
+    .header__navbar a:hover {
+        background-color: #eeeeee ;
+        transform: scale(105%);
+        border-radius: 5px;
+    }
+
+
+
+
+
+
+
+
 
     .header__title--name {
         font-size: 35px;
@@ -444,7 +449,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
         .header__section--quote {
-            font-size: 8px;
+            font-size: 15px;
+            color: black;
         }
 
  
@@ -452,35 +458,43 @@ h1, h2, h3, h4, h5, h6 {
 /****************RESUMEN*****************
 ****************************************/
     .resumen__contenedor--articulos {
-        background-color: rgb(177, 177, 177);
+        background-color: rgba(133, 133, 133, 0.596);
         margin: 5%;
         display: flex;
         flex-flow: wrap;
     }
 
     .resumen__contenedor--articulos__articulo {
-        background-color: rgba(165, 42, 42, 0.582);
+        background-color: rgba(124, 124, 124, 0);
     }
 
-    .articulos3 {
-        background-color: rgb(177, 177, 177);
-        display: flex;
-        flex-flow: row wrap;
-    }
-
-    .resumen,
-    .main2 {
+    .resumen {
         font-size: 8px;
-    }
-
-    .articulos3 {
-        height: auto;
     }
 
    
     
-/****************SKILLS*****************
+/****************FORMACION*****************
 ****************************************/
+
+.formacion {
+    font-size: 30px;
+}
+
+.educacion__contenedor--items--item>h5 {
+    transform: scale(50%);
+}
+
+.educacion__contenedor--items--item>p {
+    transform: scale(50%);
+}
+
+
+
+
+/****************RESUMEN*****************
+****************************************/
+
 .skills__programacion {
     background-position: center;
     height: auto;
@@ -488,8 +502,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skills__programacion--card {
-    margin: 5%;
-    background-color: rgba(55, 255, 122, 0.616);
+    margin: 1%;
+    background-color: rgba(29, 97, 185, 0.726);
     border-radius: 5px;
     width: 20%;
     height: auto;
@@ -503,16 +517,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .skills__programacion--card:hover:hover {
     box-shadow: 0px 0px 10px rgb(31, 28, 28);
-    margin: 5%;
 }
 
     .ico {
         width: 40px;
         height: 40px;
         margin: 0px;
-        background-color:rgba(62, 255, 191, 0.438);
         border-radius: 40%;
-        box-shadow: 0px 1px 5px 1px rgb(11, 189, 233);
+        transition: all 1s;
     }
 
     .ico:hover {
@@ -542,4 +554,14 @@ h1, h2, h3, h4, h5, h6 {
         border-radius: 10px;
         height: 8px;
     }
+
+    img.icons {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .names {
+        font-size: 10px;
+    }
+
 }
