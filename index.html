@@ -2,168 +2,306 @@
 <html lang="es">
 
 <head>
-    <!-------------- META --------------->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="./js/scripts.js"></script>
-
-    <title>JUPLER</title>
-
-    <!-------------- STYLESHEET'S --------------->
-    <link rel="stylesheet" href="./CSS/all.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="./CSS/estilos.css"/>
+  <!--============META'S============= -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--============SCRIPT'S============= -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="./js/scripts.js"></script>
+  <!--============TITLE============= -->
+  <title>JUPLER</title>
+  <!--============LINK'S============= -->
+  <link rel="stylesheet" href="./CSS/all.min.css">
+  <link rel="stylesheet" href="./CSS/index.css" />
 </head>
 
 <body>
 
+  <!--=========ICON SWIPE-UP==========-->
+  <span class="up fa-brands fa-space-awesome">
+    <p></p>
+  </span>
 
-    <span class="up fa-brands fa-space-awesome"><p>fly</p></span>
 
-    <nav class="header__navbar">
-        <a href="#" class="">Profile</a>
-        <a href="#" class="">Educational</a>
-        <a href="#" class="">Logistics</a>
-        <a href="#" class="">Programming</a>
-        <a href="#" class="">Contact</a>
-    </nav>
-    <header class="header">
+  <!--============NAVBAR============= -->
+  <nav class="navbar flexro-wrap">
+    <a href="#sobre-mi">sobre mi</a>
+    <a href="#educacion">educacion</a>
+    <a href="#experiencia">experiencias</a>
+    <a href="#skills">skills</a>
+    <a href="#contact">contacto</a>
+  </nav>
 
-        <hgroup class="header__title">
-            <h1 class="header__title--name">J. ESPARZA</h1>
-            <h4 class="header__title--position">TÉCNICO EN PLANIFICACIÓN LOGÍSTICA</h4>
-        </hgroup>
+  <!-- #Header -->
+  <!--============HEADER============= -->
+  <header class="hero flex-wrap">
 
-        <section class="header__section">
-            <div class="header__section--quote w3-animate-fading">
-                <p><strong>"Hazlo simple, <br>pero significativo" <br>-Drapper (Mad Men)-</strong></p>
-            </div>
-        </section>
+    <hgroup class="texto-principal flexco-nowrap">
+      <h1>J. Esparza<br></h1>
+      <h2>Tecnico universitario en logística | Pythonista & desarrollador junior</h2>
+    </hgroup>
 
-    </header>
-    
-    <h3 class="h3_title fondo3"> <img src="./boy-iso-gradient.png" alt="a" class="icons">PROFILE</h3>
-    <section class="resumen" id="sobre-mi">
-        <h3>SOBRE MÍ</h3>
-        <div class="resumen__contenedor">
-            <article class="resumen__contenedor--articulos">
-                <div class="resumen__contenedor--articulos__articulo">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem qui deserunt vitae
-                        debitis
-                        tempore consequatur est distinctio, reiciendis, voluptatibus minima facere corrupti tempora eos
-                        vel
-                        voluptate ratione dolorum! Odit, nostrum!Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit.
-                        Exercitationem qui deserunt vitae debitis
-                    </p>
-                </div>     
-            </article>
+    <div class="texto-frase flex-nowrap">
+      <h3>"Hazlo simple, pero significativo."
+        <span>D.Drapper (Mad Men)</span>
+      </h3>
+    </div>
+
+  </header>
+
+
+  <!--=========MAIN CONTENT========== -->
+  <main class="contenedor-principal flex-wrap">
+
+    <!--Sobre mi Detalles-->
+    <section class="sobre_mi flex-wrap" id="sobre-mi">
+      <h2 id="titulo-contenedor">Sobre mi</h2>
+
+      <article class="item-perfil">
+        <h4 class="titulo-seccion perfil"> perfil</h4>
+        <p>¡Hola! soy Juan Esparza, tengo 31 años, soy mexicano con residencia en Argentina desde el 2013. Actualmente
+          vivo en Lomas de Zamora, Zona metropolitana de Buenos Aires. Me considero a mí mismo como un estudiante, un
+          emprendedor y un profesional.</p><br>
+
+        <p>Tengo conocimientos destacados en el área logístico-comercial, con funciones de búsqueda y selección
+          de
+          proveedores, embalaje y packaging, control y gestión de stocks, pronósticos de demanda, layout,
+          marketing digital, herramientas analíticas, digitales y administrativas, entre otras.<br><br>
+
+          Soy una persona con mucho potencial; creativa, analítica, resiliente, colaborativa, curiosa,
+          responsable
+          y con iniciativa, que busca activamente respuestas, soluciones y mejoras a planteamientos y
+          problemáticas</p>
+      </article>
+
+      <article class="item-perfil objetivos ">
+        <h4 class="titulo-seccion"> objetivos</h4>
+        <p class="parrafo2">Mis objetivos profesionales se orientan hacia la especialización en SCM, Logística y las
+          tecnologías disponiblespara poder brindar soluciones inteligentes respaldadas sólidamente por procesos eficientes tales como; Business
+          Analytics, Data analytics, ML.</p>
+      </article>
+
+    </section>
+
+
+    <section class="item-educacion img-bkg flex-wrap" id="educacion">
+
+      <article class="educacion">
+        <div class="cajas flexro-wrap">
+          <h3 id="titulo-seccion"> <i class="fa-solid fa-graduation-cap"></i> Educación Formal</h3>
+
+          <div class="edu-detalle flexco-nowrap">
+            <h4> <span>Licenciatura</span> en Planificación Logística</h4>
+            <h6>Universidad Nacional de Lanús - Falta TFI</h6>
+          </div>
+
+          <div class="edu-detalle flexco-nowrap">
+            <h4> <span>Técnico</span> Universitario en Logística</h4>
+            <h6>Universidad Nacional de Lanús - Obtenido</h6>
+          </div>
+
         </div>
-    </section>   
+      </article>
 
-    <h3 class="h3_title fondo3"> <img src="./file-text-iso-gradient.png" alt="a" class="icons">EDUCATIONAL</h3>
-    <section class="educacion">
-        <div class="educacion__contenedor">
-            <article class="educacion__contenedor--items">
-                <div class="educacion__contenedor--items--item">
-                    <h5>UNIVERSIDAD NACIONAL DE LANÚS</h5>
-                    <p>Técnicatura Universitaria en Logística</p>
-                    <p>(Obtenida)</p>
-                </div>
-                <div class="educacion__contenedor--items--item">
-                    <h5>UNIVERSIDAD NACIONAL DE LANÚS</h5>
-                    <p>Licenciatura en Planificación Logística</p>
-                    <p>(Falta presentar TFI)</p>
-                </div>
-            </article>
+      <article class="cursos">
+        <div class=" cajas flexco-wrap">
+          <h4 id="titulo-seccion">Cursos</h4>
+
+          <div class="cur-detalle">
+            <h5>Excel aplicado a stock</h5>
+            <h6>Universidad Nacional de Lanús</h6>
+          </div>
+
+          <div class="cur-detalle">
+            <h5>Trazabilidad: Implementación del estándar GS1</h5>
+            <h6>GS1 Argentina</h6>
+          </div>
+
+          <div class="cur-detalle">
+            <h5>Logística y Cadena de Suministro</h5>
+            <h6>Udemy (en curso)</h6>
+          </div>
+
+        </div>
+      </article>
+
+    </section>
+
+
+    <section class="item-experiencia flex-wrap" id="experiencia">
+      <h4 class="titulo-seccion"> Experiencia </h4>
+      <h4> Mis experiencias han sido desarrolladas en puestos desde empleado y encargado de papelería,
+        emprenidmiento, así como actividad autónoma</h4>
+
+      <article class="exp-detalles flex-wrap">
+
+        <div class="detalle">
+          <div><i class="fa-solid fa-cubes-stacked"></i></div>
+          <p>+5 Años</p>
+          <h6>Control stocks</h6>
         </div>
 
-    </section>
+        <div class="detalle">
+          <div><i class="fa-solid fa-truck-fast"></i></div>
+          <p>+3 Años</p>
+          <h6>Proveedores</h6>
+        </div>
 
-    <h3 class="h3_title fondo3"> <img src="./flag-iso-gradient.png" alt="a" class="icons"> LOGISTICS</h3>
-    <section >
-    </section>
+        <div class="detalle">
+          <div><i class="fa-solid fa-list-check"></i></div>
+          <p>+2 Años</p>
+          <h6>Gestión logística</h6>
+        </div>
 
-    <h3 class="h3_title fondo3"><img src="./computer-iso-gradient.png" alt="a" class="icons">PROGRAMMING</h3>
-    <section class="skills">
+        <div class="detalle">
+          <div><i class="fa-solid fa-chart-simple"></i></i></div>
+          <p>+2 Años</p>
+          <h6>Análisis logístico</h6>
+        </div>
 
-        <h3>SKILLS</h3>
-        <article class="skills__programacion">
-
-            <div class="skills__programacion--card">
-                <h3><img src="./icons/langs/python_icon.svg" alt="" class="ico"></h3>
-                <h4 class="names">PYTHON</h4>
-                <div class="card--barra">
-                    <div class="barra--exp python">70%</div>
-                </div>
-            </div>
-
-            <div class="skills__programacion--card">
-                <h3><img src="./icons/langs/html_icon.svg" alt="" class="ico"></h3>
-                <h4 class="names">HTML</h4>
-                <div class="card--barra">
-                    <div class="barra--exp  html">80%</div>
-                </div>
-            </div>
-
-            <div class="skills__programacion--card">
-                <h3><img src="./icons/langs/css3_icon.svg" alt="" class="ico"></h3>
-                <h4 class="names">CSS</h4>
-                <div class="card--barra">
-                    <div class="barra--exp  css">60%</div>
-                </div>
-            </div>
-
-            <div class="skills__programacion--card">
-                <h3><img src="./icons/langs/database_icon.svg" alt="" class="ico"></h3>
-                <h4 class="names">SQLite</h4>
-                <div class="card--barra">
-                    <div class="barra--exp  sqlite">35%</div>
-                </div>
-            </div>
-
-        </article>
-
-        <h3>OFIMÁTICA</h3>
-        <article class="skills__programacion">
-
-            <div class="skills__programacion--card">
-                <h3><img src="./icons/ofi/excel_icon.svg" alt="" class="ico"></h3>
-                <h4 class="names">EXCEL</h4>
-                <div class="card--barra">
-                    <div class="barra--exp python">80%</div>
-                </div>
-            </div>
-
-            <div class="skills__programacion--card">
-                <h3><img src="./icons/ofi/word_icon.svg" alt="" class="ico"></h3>
-                <h4 class="names">WORD</h4>
-                <div class="card--barra">
-                    <div class="barra--exp  html">60%</div>
-                </div>
-            </div>
-
-            <div class="skills__programacion--card">
-                <h3><img src="./icons/ofi/powerpoint_icon.svg" alt="" class="ico"></h3>
-                <h4 class="names">PPOINT</h4>
-                <div class="card--barra">
-                    <div class="barra--exp  css">55%</div>
-                </div>
-            </div>
-
-        </article>
-
+      </article>
     </section>
 
 
-    <footer>
-        <h6 class="">by @JESPARZAROM</h6>
-    </footer>
+    <section class="item-skills flex-wrap" id="skills">
 
+      <article class="lenguajes flexro-wrap" >
+        <h4 class="titulo-seccion">Lenguajes</h4>
+        
+        <div class="lenguaje flexco-nowrap">
+          <p>Español</p>
+          <h6>Nativo ⭐⭐⭐</h6>
+          <h6>.</h6>
+          <h6>.</h6>
+        </div>
+
+        <div class="lenguaje flexco-nowrap">
+          <p>Inglés</p>
+          <h6>Lectura: ⭐⭐</h6>
+          <h6>Escritura: ⭐</h6>
+          <h6>Oral: ⭐</h6>
+        </div>
+
+      </article>
+
+      <article class="soft-skills" >
+        <h4 class="titulo-seccion" id="skills"> Soft skills</h4>
+        <div class="item-skills_detalles flex-wrap">
+          <p> <i class="fa-solid fa-shapes"></i> Adaptabilidad</p>
+          <p> <i class="fa-solid fa-magnifying-glass-chart"></i> Análisis</p>
+          <p> <i class="fa-solid fa-handshake"></i> Colaboración</p>
+          <p> <i class="fa-solid fa-brain"></i> Creatividad</p>
+          <p> <i class="fa-solid fa-gauge-high"></i> Rápido Aprendizaje</p>
+          <p> <i class="fa-solid fa-users"></i> Sociabilidad</p>
+          <p> <i class="fa-solid fa-ear-listen"></i> Escucha activa</p>
+          <p> <i class="fa-solid fa-hand-fist"></i> Perseverancia</p>
+        </div>
+      </article>
+
+      <article class="hard-skills">
+        <h4 class=" titulo-seccion" id="skills"> Hard skills</h4>
+        <div class="item-hskills_detalles flex-wrap">
+
+          <div class="hskill-detalles">
+            <div><img src="./icons/ofi/excel_icon.svg"></div>
+            <p>Excel</p>
+            <h6>⭐⭐</h6>
+          </div>
+
+          <div class="hskill-detalles">
+            <div><img src="./icons/ofi/word_icon.svg"></i></div>
+            <p>Word</p>
+            <h6>⭐⭐⭐</h6>
+          </div>
+
+          <div class="hskill-detalles">
+            <div> <img src="./icons/ofi/powerpoint_icon.svg"></div>
+            <p>PPT</p>
+            <h6>⭐⭐⭐</h6>
+          </div>
+
+          <div class="hskill-detalles">
+            <div><img src="./icons/langs/python_icon.svg"></div>
+            <p>Python</p>
+            <h6>⭐⭐</h6>
+          </div>
+
+          <div class="hskill-detalles">
+            <div id="pobi"><img src="./icons/ofi/microsoft_powerbi_logo_icon_170953.svg" ></i></div>
+            <p>Power Bi</p>
+            <h6>⭐</h6>
+          </div>
+
+          <div class="hskill-detalles">
+            <div> <img src="./icons/ofi/4552608-ads-adwords-google-ads_121389.svg"></div>
+            <p>Google Ads</p>
+            <h6>⭐⭐</h6>
+          </div>
+
+          <div class="hskill-detalles">
+            <div> <img src="./icons/ofi/google_analytics_image_logo_icon_168152.svg"></div>
+            <p>G. Analytics</p>
+            <h6>⭐⭐</h6>
+          </div>
+
+          <div class="hskill-detalles">
+            <div> <img src="./icons/ofi/meta_brand_icon_211716.svg"></div>
+            <p>Meta Pixel</p>
+            <h6>⭐⭐</h6>
+          </div>
+
+          <div class="hskill-detalles">
+            <div> <img src="./icons/ofi/3_icon-icons.com_65771.svg"></div>
+            <p>Meta Ads</p>
+            <h6>⭐⭐</h6>
+          </div>
+
+          <div class="hskill-detalles">
+            <div> <img src="./icons/ofi/iconfinder-basket-4341280_120547.svg"></div>
+            <p>E-commerce</p>
+            <h6>⭐⭐⭐</h6>
+          </div>
+
+        </div>
+      </article>
+    </section>
+
+
+    <!--Contacto formulario-->
+    <section class="contacto  flexco-wrap" id="contact">
+      <h2>Contacto</h2>
+      <div>
+        <p>Nombre</p>
+        <input type="text" name="name" id="nombre" placeholder="¿Quién eres?">
+
+        <p>Mail</p>
+        <input type="email" name="mail" id="correo" placeholder="¿Cuál es tu correo?">
+
+        <p>Asunto</p>
+        <input type="text" name="" id="asunto" placeholder="¿Por qué me contactas?">
+
+        <p>Mensaje</p>
+        <textarea name="mensaje" id="mensaje" cols="10" rows="10" placeholder="Ingresa los detalles"></textarea><br>
+
+        <button type="submit">Enviar mensaje</button>
+
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!--============FOOTER============= -->
+  <footer>
+    <h6 class="">by @JESPARZAROM</h6>
+  </footer>
+
+
+  <!--============Script============= -->
+  <script src="./js/scripts.js"></script>
 </body>
 
 </html>
