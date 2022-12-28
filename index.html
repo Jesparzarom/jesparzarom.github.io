@@ -7,188 +7,194 @@
   <meta http-equiv="X-UA-Compatible" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--============SCRIPT'S============= -->
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-  <script src="./js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <!--============TITLE============= -->
   <title>JUPLER</title>
   <!--============LINK'S============= -->
+  <link rel="stylesheet" href="./CSS/index.css">
+  <link rel="stylesheet" href="./CSS/fontawesome.min.css">
   <link rel="stylesheet" href="./CSS/all.min.css">
-  <link rel="stylesheet" href="./CSS/index.css" />
 </head>
 
 <body>
 
   <!--=========ICON SWIPE-UP==========-->
-  <span class="up fa-brands fa-space-awesome">
-    <p></p>
-  </span>
+  <button class="scroll-top-button">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
 
-  <!--============NAVBAR============= -->
-  <nav class="navbar flexro-wrap">
-    <a href="#sobre-mi">sobre mi</a>
-    <a href="#educacion">educacion</a>
-    <a href="#experiencia">experiencias</a>
-    <a href="#skills">skills</a>
-    <a href="#contact">contacto</a>
-  </nav>
+  <!--============NAVBAR AND HERO============= -->
+  <header class="header">
 
-  <!-- #Header -->
-  <!--============HEADER============= -->
-  <header class="hero flex-wrap">
+    <nav class="nav">
+      <a href="#about" class="nav__item">sobre mi</a>
+      <a href="#learn" class="nav__item">educacion</a>
+      <a href="#xperience" class="nav__item">experiencias</a>
+      <a href="#" class="nav__item">skills</a>
 
-    <hgroup class="texto-principal flexco-nowrap">
-      <h1>J. Esparza<br></h1>
-      <h2>Tecnico universitario en logística | Pythonista & desarrollador junior</h2>
-    </hgroup>
+      <!-- 
+      <div class="nav__contact">
+        <a href="https://www.linkedin.com/in/juan-esparzar" target="_blank" class="nav__item nav__contact--item"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:jesparzarom@outlook.com" class="nav__item nav__contact--item"><i
+            class="fa-solid fa-envelope"></i></a>
+      </div>
+      -->
+      
+    </nav>
 
-    <div class="texto-frase flex-nowrap">
-      <h3>"Hazlo simple, pero significativo."
-        <span>D.Drapper (Mad Men)</span>
-      </h3>
+    <div class="hero">
+      <hgroup>
+        <h1 class="hero__title">J.P. Esparza<br></h1>
+        <h2 class="hero__subtitle">Tecnico universitario en logística | UNLa</h2>
+        <!--
+        <a class="hero--download" href="/CV Juan Esparza 2022.pdf" download=""><i
+            class="fa-solid fa-file-arrow-down"></i> Descargar pdf</a> -->
+      </hgroup>
     </div>
 
   </header>
 
 
   <!--=========MAIN CONTENT========== -->
-  <main class="contenedor-principal flex-wrap">
+  <main class="main">
+    <!--SPerfil Detalles-->
+    <section class="container" id="about">
+      <article class="article article__profile">
+        <h4 class="article__title"><i class="fa-solid fa-address-card"></i> perfil</h4>
+        <p class="article__text">Soy Juan Esparza, un profesional de 31 años con una pasión por el aprendizaje y el
+          emprendimiento. Actualmente resido en Lomas de Zamora, en la Zona Metropolitana de Buenos Aires.
 
-    <!--Sobre mi Detalles-->
-    <section class="sobre_mi flex-wrap" id="sobre-mi">
-      <h2 id="titulo-contenedor">Sobre mi</h2>
+          Tengo amplia experiencia en el área logístico-comercial, con destrezas en la búsqueda y selección de
+          proveedores, el embalaje y el packaging, la gestión de stocks, la predicción de la demanda, el layout, el
+          marketing digital, la gestión de e-commerce y el uso de herramientas analíticas, digitales y administrativas.
 
-      <article class="item-perfil">
-        <h4 class="titulo-seccion perfil"> perfil</h4>
-        <p>¡Hola! soy Juan Esparza, tengo 31 años, soy mexicano con residencia en Argentina desde el 2013. Actualmente
-          vivo en Lomas de Zamora, Zona metropolitana de Buenos Aires. Me considero a mí mismo como un estudiante, un
-          emprendedor y un profesional.</p><br>
-
-        <p>Tengo conocimientos destacados en el área logístico-comercial, con funciones de búsqueda y selección
-          de
-          proveedores, embalaje y packaging, control y gestión de stocks, pronósticos de demanda, layout,
-          marketing digital, herramientas analíticas, digitales y administrativas, entre otras.<br><br>
-
-          Soy una persona con mucho potencial; creativa, analítica, resiliente, colaborativa, curiosa,
-          responsable
-          y con iniciativa, que busca activamente respuestas, soluciones y mejoras a planteamientos y
-          problemáticas</p>
+          Me destaco por mi creatividad, análisis, resiliencia, colaboración, curiosidad, responsabilidad y
+          proactividad. Siempre estoy buscando formas de mejorar y solucionar problemas y retos.</p>
       </article>
 
-      <article class="item-perfil objetivos ">
-        <h4 class="titulo-seccion"> objetivos</h4>
-        <p class="parrafo2">Mis objetivos profesionales se orientan hacia la especialización en SCM, Logística y las
-          tecnologías disponiblespara poder brindar soluciones inteligentes respaldadas sólidamente por procesos eficientes tales como; Business
-          Analytics, Data analytics, ML.</p>
+      <article class="article article__profile">
+        <h4 class="article__title"><i class="fa-solid fa-bullseye"></i> objetivo</h4>
+        <p class="article__text">Mi objetivo profesional es especializarme en tecnologías logísticas que permitan
+          optimizar las operaciones y proporcionar soluciones innovadoras a través de procesos inteligentes. Estoy
+          comprometido con la mejora continua y la obtención de nuevos conocimientos y habilidades a través del
+          aprendizaje y la experiencia. Me siento entusiasmado y motivado por la posibilidad de contribuir a empresas
+          que valoran la eficiencia y la excelencia en sus procesos logísticos, independientemente del área de la cadena
+          de suministro en la que me encuentre.</p>
       </article>
-
     </section>
 
+    <!--Educación y aprendizajes-->
+    <section class="container" id="learn">
+      <article class="article article__education">
 
-    <section class="item-educacion img-bkg flex-wrap" id="educacion">
+        <div class="cards">
+          <h3 class="cards__title article__title"><i class="fa-solid fa-graduation-cap"></i> Educación y Capacitación
+          </h3>
 
-      <article class="educacion">
-        <div class="cajas flexro-wrap">
-          <h3 id="titulo-seccion"> <i class="fa-solid fa-graduation-cap"></i> Educación Formal</h3>
-
-          <div class="edu-detalle flexco-nowrap">
+          <div class="cards__education">
             <h4> <span>Licenciatura</span> en Planificación Logística</h4>
             <h6>Universidad Nacional de Lanús - Falta TFI</h6>
           </div>
 
-          <div class="edu-detalle flexco-nowrap">
+          <div class="cards__education">
             <h4> <span>Técnico</span> Universitario en Logística</h4>
             <h6>Universidad Nacional de Lanús - Obtenido</h6>
           </div>
 
         </div>
-      </article>
 
-      <article class="cursos">
-        <div class=" cajas flexco-wrap">
-          <h4 id="titulo-seccion">Cursos</h4>
+        <div class="cards">
+          <h4 class="cards__title article__title"><i class="fa-solid fa-school"></i> Cursos</h4>
 
-          <div class="cur-detalle">
+          <div class="cards__learn">
             <h5>Excel aplicado a stock</h5>
             <h6>Universidad Nacional de Lanús</h6>
           </div>
 
-          <div class="cur-detalle">
+          <div class="cards__learn">
             <h5>Trazabilidad: Implementación del estándar GS1</h5>
             <h6>GS1 Argentina</h6>
           </div>
 
-          <div class="cur-detalle">
+          <div class="cards__learn">
             <h5>Logística y Cadena de Suministro</h5>
             <h6>Udemy (en curso)</h6>
           </div>
 
         </div>
+
       </article>
 
     </section>
 
+    <!--Experiencia-->
+    <section class="container" id="xperience">
 
-    <section class="item-experiencia flex-wrap" id="experiencia">
-      <h4 class="titulo-seccion"> Experiencia </h4>
-      <h4> Mis experiencias han sido desarrolladas en puestos desde empleado y encargado de papelería,
-        emprenidmiento, así como actividad autónoma</h4>
+      <article class="article article__xperience">
+        <hgroup>
+          <h4 class="article__xperience--title article__title"><i class="fa-solid fa-briefcase"></i> Experiencia </h4>
+          <h4 class="article__xperience--text article__text"> Mi trayectoria profesional me ha llevado a ocupar puestos
+            de trabajo que
+            van desde empleado y encargado de papelería, hasta emprendedor y trabajador autónomo. A lo largo de mi
+            carrera he adquirido una amplia variedad de habilidades y conocimientos que me han permitido crecer y
+            desarrollarme como profesional. Estoy seguro de que estas experiencias me han preparado para enfrentar
+            cualquier desafío que se me presente en el futuro.</h4>
+        </hgroup>
 
-      <article class="exp-detalles flex-wrap">
+        <div class="xperience__cards">
+          <div class="xperience__cards--card">
+            <div class="xperience__cards--icon"><i class="fa-solid fa-cubes-stacked"></i></div>
+            <p>+5 Años</p>
+            <h6>Control stocks</h6>
+          </div>
 
-        <div class="detalle">
-          <div><i class="fa-solid fa-cubes-stacked"></i></div>
-          <p>+5 Años</p>
-          <h6>Control stocks</h6>
+          <div class="xperience__cards--card">
+            <div class="xperience__cards--icon"><i class="fa-solid fa-truck-fast"></i></div>
+            <p>+3 Años</p>
+            <h6>Proveedores</h6>
+          </div>
+
+          <div class="xperience__cards--card">
+            <div class="xperience__cards--icon"><i class="fa-solid fa-list-check"></i></div>
+            <p>+2 Años</p>
+            <h6>Gestión logística</h6>
+          </div>
+
+          <div class="xperience__cards--card">
+            <div class="xperience__cards--icon"><i class="fa-solid fa-chart-simple"></i></i></div>
+            <p>+2 Años</p>
+            <h6>Análisis logístico</h6>
+          </div>
         </div>
-
-        <div class="detalle">
-          <div><i class="fa-solid fa-truck-fast"></i></div>
-          <p>+3 Años</p>
-          <h6>Proveedores</h6>
-        </div>
-
-        <div class="detalle">
-          <div><i class="fa-solid fa-list-check"></i></div>
-          <p>+2 Años</p>
-          <h6>Gestión logística</h6>
-        </div>
-
-        <div class="detalle">
-          <div><i class="fa-solid fa-chart-simple"></i></i></div>
-          <p>+2 Años</p>
-          <h6>Análisis logístico</h6>
-        </div>
-
       </article>
+
     </section>
 
+    <!--Idiomas y Skills-->
+    <section class="container" id="skills">
 
-    <section class="item-skills flex-wrap" id="skills">
+      <!--Idiomas-->
+      <article class="article article__lang">
+        <h4 class="article__title article__lang--title"><i class="fa-solid fa-language"></i> Lenguajes</h4>
 
-      <article class="lenguajes flexro-wrap" >
-        <h4 class="titulo-seccion">Lenguajes</h4>
-        
-        <div class="lenguaje flexco-nowrap">
+        <div class="article__lang--item">
           <p>Español</p>
-          <h6>Nativo ⭐⭐⭐</h6>
-          <h6>.</h6>
-          <h6>.</h6>
+          <h6>Nativo</h6>
         </div>
 
-        <div class="lenguaje flexco-nowrap">
+        <div class="article__lang--item">
           <p>Inglés</p>
-          <h6>Lectura: ⭐⭐</h6>
-          <h6>Escritura: ⭐</h6>
-          <h6>Oral: ⭐</h6>
+          <h6>Intermedio</h6>
         </div>
-
       </article>
 
-      <article class="soft-skills" >
-        <h4 class="titulo-seccion" id="skills"> Soft skills</h4>
-        <div class="item-skills_detalles flex-wrap">
+      <!--Soft Skills -->
+      <article class="article article__soft">
+        <h4 class="article__title article__soft--title"><i class="fa-solid fa-shapes"></i> Soft skills</h4>
+        <div class="article__soft--skills">
           <p> <i class="fa-solid fa-shapes"></i> Adaptabilidad</p>
           <p> <i class="fa-solid fa-magnifying-glass-chart"></i> Análisis</p>
           <p> <i class="fa-solid fa-handshake"></i> Colaboración</p>
@@ -200,108 +206,139 @@
         </div>
       </article>
 
-      <article class="hard-skills">
-        <h4 class=" titulo-seccion" id="skills"> Hard skills</h4>
-        <div class="item-hskills_detalles flex-wrap">
+      <!--Hard Skills -->
+      <article class="article article__hard">
+        <h4 class="article__title article__hard--title"><i class="fa-solid fa-screwdriver-wrench"></i> Hard skills</h4>
 
-          <div class="hskill-detalles">
-            <div><img src="./icons/ofi/excel_icon.svg"></div>
+        <div class="article__hard--skills">
+          <div class="hard-skill">
             <p>Excel</p>
-            <h6>⭐⭐</h6>
+            <h6><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-regular fa-star"></i></h6>
           </div>
 
-          <div class="hskill-detalles">
-            <div><img src="./icons/ofi/word_icon.svg"></i></div>
+          <div class="hard-skill">
             <p>Word</p>
-            <h6>⭐⭐⭐</h6>
+            <h6><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-regular fa-star"></i></h6>
           </div>
 
-          <div class="hskill-detalles">
-            <div> <img src="./icons/ofi/powerpoint_icon.svg"></div>
+          <div class="hard-skill">
             <p>PPT</p>
-            <h6>⭐⭐⭐</h6>
+            <h6><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-regular fa-star"></i></h6>
           </div>
 
-          <div class="hskill-detalles">
-            <div><img src="./icons/langs/python_icon.svg"></div>
+          <div class="hard-skill">
             <p>Python</p>
-            <h6>⭐⭐</h6>
+            <h6><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i
+                class="fa-regular fa-star"></i></h6>
           </div>
 
-          <div class="hskill-detalles">
-            <div id="pobi"><img src="./icons/ofi/microsoft_powerbi_logo_icon_170953.svg" ></i></div>
+          <div class="hard-skill">
             <p>Power Bi</p>
-            <h6>⭐</h6>
+            <h6><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                class="fa-regular fa-star"></i></h6>
           </div>
 
-          <div class="hskill-detalles">
-            <div> <img src="./icons/ofi/4552608-ads-adwords-google-ads_121389.svg"></div>
+          <div class="hard-skill">
             <p>Google Ads</p>
-            <h6>⭐⭐</h6>
+            <h6><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i
+                class="fa-regular fa-star"></i></h6>
           </div>
 
-          <div class="hskill-detalles">
-            <div> <img src="./icons/ofi/google_analytics_image_logo_icon_168152.svg"></div>
+          <div class="hard-skill">
             <p>G. Analytics</p>
-            <h6>⭐⭐</h6>
+            <h6><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i
+                class="fa-regular fa-star"></i></h6>
           </div>
 
-          <div class="hskill-detalles">
-            <div> <img src="./icons/ofi/meta_brand_icon_211716.svg"></div>
+          <div class="hard-skill">
             <p>Meta Pixel</p>
-            <h6>⭐⭐</h6>
+            <h6><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i
+                class="fa-regular fa-star"></i></h6>
           </div>
 
-          <div class="hskill-detalles">
-            <div> <img src="./icons/ofi/3_icon-icons.com_65771.svg"></div>
+          <div class="hard-skill">
             <p>Meta Ads</p>
-            <h6>⭐⭐</h6>
+            <h6><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i
+                class="fa-regular fa-star"></i></h6>
           </div>
 
-          <div class="hskill-detalles">
-            <div> <img src="./icons/ofi/iconfinder-basket-4341280_120547.svg"></div>
+          <div class="hard-skill">
             <p>E-commerce</p>
-            <h6>⭐⭐⭐</h6>
+            <h6><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-regular fa-star"></i></h6>
           </div>
 
         </div>
       </article>
     </section>
 
+    <!--Contacto-->
+    <section class="container">
+      <div class="article article__contact">
+        <h2 class="article__contact--title">Contacto</h2>
 
-    <!--Contacto formulario-->
-    <section class="contacto  flexco-wrap" id="contact">
-      <h2>Contacto</h2>
-      <div>
-        <p>Nombre</p>
-        <input type="text" name="name" id="nombre" placeholder="¿Quién eres?">
+        <div class="contactme">
+          <a class="contactme--btn" href="">
+            <div class="contactme--item">
+              <h3><i class="fa-brands fa-linkedin"></i></h3>
+              <h6>Linkedin</h6>
+            </div>
+          </a>
 
-        <p>Mail</p>
-        <input type="email" name="mail" id="correo" placeholder="¿Cuál es tu correo?">
+          <a class="contactme--btn" href="">
+          <div class="contactme--item">
+            <h3><i class="fa-solid fa-envelope"></i></h3>
+            <h6>Email</h6>
+          </div>
+          </a>
 
-        <p>Asunto</p>
-        <input type="text" name="" id="asunto" placeholder="¿Por qué me contactas?">
+          <a class="contactme--btn" href="">
+            <div class="contactme--item">
+              <h3><i class="fa-brands fa-whatsapp"></i></h3>
+              <h6>WhatsApp</h6>
+            </div>
+          </a>
 
-        <p>Mensaje</p>
-        <textarea name="mensaje" id="mensaje" cols="10" rows="10" placeholder="Ingresa los detalles"></textarea><br>
-
-        <button type="submit">Enviar mensaje</button>
-
-
+        </div>
       </div>
     </section>
-
   </main>
 
 
   <!--============FOOTER============= -->
-  <footer>
-    <h6 class="">by @JESPARZAROM</h6>
+  <footer class="container">
+    <h6>by @JESPARZAROM</h6>
   </footer>
 
 
   <!--============Script============= -->
-  <script src="./js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous">
+
+      $(document).ready(function () {
+        $(".scroll-top-button").click(function () {
+          $("body, html").animate({
+            scrollTop: "0px"
+          }, 1000); /* Desplazamiento suave durante 1 segundo */
+        });
+
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 0) {
+            $(".scroll-top-button").fadeOut(300);
+          } else {
+            $(".scroll-top-button").fadeIn(300);
+          }
+        });
+      });
+
+    </script>
+
+
+
+
 </body>
 
 </html>
